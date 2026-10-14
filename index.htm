@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hezron Web Solution | Professional Website Development</title>
+<style>
+:root{color-scheme:dark;--bg:#070b1f;--bg2:#0d1333;--card:#101842;--line:#26307a;--text:#f2f4ff;--muted:#a7b0dd;--cyan:#22d3ee;--green:#25d366;--grad:linear-gradient(90deg,#6d4aff,#3b82f6);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#070b1f}}
+:root[data-theme="dark"]{--bg:#070b1f}
+*{box-sizing:border-box;margin:0}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{background:var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,'Segoe UI',sans-serif}
+.wrap{max-width:1040px;margin:0 auto;padding:0 18px}
+header{background:var(--bg2);border-bottom:1px solid var(--line);position:sticky;top:env(safe-area-inset-top,0px);z-index:20}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);font-weight:800;line-height:1.1}
+.logo i{width:38px;height:38px;border-radius:50%;background:var(--grad);display:grid;place-items:center;font-style:normal}
+.logo small{display:block;color:var(--cyan);font-size:15px}
+nav{display:flex;gap:4px;overflow-x:auto;padding-bottom:8px;scrollbar-width:none}
+nav a{color:var(--text);text-decoration:none;padding:7px 13px;border-radius:8px;font-size:14px;white-space:nowrap}
+nav a.on{background:#6d4aff}
+.btn{display:inline-block;background:var(--grad);color:#fff;border:0;padding:13px 22px;border-radius:12px;font:600 16px system-ui;text-decoration:none;cursor:pointer}
+.btn.line{background:none;border:1.5px solid var(--line)}
+.btn.wa{background:var(--green)}
+.page{display:none;padding:34px 0}
+.page.on{display:block}
+.eyebrow{font-size:13px;letter-spacing:.08em;color:var(--muted);text-transform:uppercase}
+h1{font-size:clamp(32px,7vw,52px);line-height:1.1;margin:10px 0 14px}
+h1 b,h2 b{color:var(--cyan)}
+h2{font-size:clamp(26px,5vw,36px);margin-bottom:8px}
+.lead{color:var(--muted);max-width:560px;margin-bottom:20px}
+.hero{display:grid;gap:26px;grid-template-columns:1fr}
+@media(min-width:800px){.hero{grid-template-columns:1.2fr 1fr}}
+.chips{display:flex;flex-wrap:wrap;gap:14px;margin:0 0 22px;color:var(--muted);font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.card .ic{font-size:34px;margin-bottom:8px}
+.card h3{font-size:18px;margin-bottom:4px}
+.card p{color:var(--muted);font-size:14px;margin-bottom:12px}
+.card .btn{padding:10px 18px;font-size:15px;width:100%;text-align:center}
+.sec{margin-top:44px}
+.center{text-align:center}
+form{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;display:grid;gap:11px}
+form h3{font-size:22px}
+input,select,textarea{width:100%;padding:13px;border-radius:10px;border:1px solid var(--line);background:#fff;color:#111;font:16px system-ui}
+.cta{margin-top:44px;background:linear-gradient(90deg,#1a1f6b,#0e3a8a);border:1px solid var(--line);border-radius:16px;padding:22px;display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center}
+.stars{color:#fbbf24;letter-spacing:2px}
+.av{width:46px;height:46px;border-radius:50%;background:var(--grad);display:grid;place-items:center;font-weight:700;margin-bottom:10px}
+.ph{height:120px;border-radius:12px;margin-bottom:12px;display:grid;place-items:center;color:var(--muted);background:repeating-linear-gradient(45deg,#16206b,#16206b 8px,#101842 8px,#101842 16px)}
+footer{margin-top:50px;background:var(--bg2);border-top:1px solid var(--line);padding:28px 0 90px;color:var(--muted);font-size:14px}
+footer .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+footer h4{color:var(--cyan);margin-bottom:8px;font-size:16px}
+footer a{color:var(--text);text-decoration:none;display:block;padding:2px 0}
+.fab{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));background:var(--green);color:#fff;padding:13px 18px;border-radius:99px;font-weight:700;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.45);z-index:30}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<div class="bar"><a class="logo" href="#home"><i>H</i><span>Hezron<small>Web Solution</small></span></a><a class="btn wa-link" href="#" style="padding:10px 16px;font-size:14px">Get a Quote</a></div>
+<nav id="nav"><a href="#home">Home</a><a href="#services">Services</a><a href="#types">Website Types</a><a href="#portfolio">Portfolio</a><a href="#about">About</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<main class="wrap">
+<section class="page" id="home">
+<div class="hero">
+<div>
+<div class="eyebrow">Your vision · Our code · Your success</div>
+<h1>Professional Website <b>Development</b> Services</h1>
+<p class="lead">We create modern, fast, secure and SEO-friendly websites for businesses, organizations and individuals. Get your dream website today and grow your online presence!</p>
+<div class="chips"><span>⚡ Fast Loading</span><span>🛡️ Secure &amp; Reliable</span><span>🔍 SEO Optimized</span><span>📱 Mobile Responsive</span></div>
+<a class="btn" href="#contact">Get a Free Quote →</a> <a class="btn line" href="#portfolio">Watch Our Work</a>
+</div>
+<div class="formslot"></div>
+</div>
+<div class="sec center"><h2>Choose Your <b>Website Type</b></h2><p class="lead" style="margin:0 auto">Select the type of website you need, and we will customize it for you.</p></div>
+<div class="grid typegrid"></div>
+<div class="grid">
+<div class="card"><div class="ic">🚀</div><h3>On-Time Delivery</h3><p>We deliver projects on schedule.</p></div>
+<div class="card"><div class="ic">🛡️</div><h3>Affordable Prices</h3><p>Quality services at competitive rates.</p></div>
+<div class="card"><div class="ic">🎧</div><h3>Ongoing Support</h3><p>We are here even after launch.</p></div>
+<div class="card"><div class="ic">⭐</div><h3>100% Satisfaction</h3><p>Your happiness is our priority.</p></div>
+</div>
+<div class="cta"><div><h2 style="margin:0">Ready to Start Your Project?</h2><p class="lead" style="margin:0">Get a customized quote for your website now!</p></div><a class="btn wa-link" href="#">Request a Quote →</a></div>
+</section>
+
+<section class="page" id="services">
+<h2>Our <b>Services</b></h2><p class="lead">Everything you need to get online and grow.</p>
+<div class="grid">
+<div class="card"><div class="ic">🎨</div><h3>Web Design</h3><p>Modern, clean layouts that look great on every screen.</p></div>
+<div class="card"><div class="ic">💻</div><h3>Web Development</h3><p>Fast, secure websites built to your needs.</p></div>
+<div class="card"><div class="ic">🛒</div><h3>Online Stores</h3><p>Sell your products online with easy ordering.</p></div>
+<div class="card"><div class="ic">📅</div><h3>Booking Systems</h3><p>Let clients book appointments from their phones.</p></div>
+<div class="card"><div class="ic">🔍</div><h3>SEO Setup</h3><p>Help customers find you on Google.</p></div>
+<div class="card"><div class="ic">🔧</div><h3>Redesign &amp; Support</h3><p>Fix, update or refresh your existing website.</p></div>
+</div>
+<div class="cta"><div><h2 style="margin:0">Need something specific?</h2></div><a class="btn wa-link" href="#">Chat on WhatsApp</a></div>
+</section>
+
+<section class="page" id="types">
+<h2>Choose Your <b>Website Type</b></h2><p class="lead">Select the type of website you need, and we will customize it for you.</p>
+<div class="grid typegrid"></div>
+</section>
+
+<section class="page" id="portfolio">
+<h2>Our <b>Portfolio</b></h2><p class="lead">A look at the kinds of sites we build. Real projects are added here as they go live.</p>
+<div class="grid">
+<div class="card"><div class="ph">Sample</div><h3>Business Website</h3><p>Products, prices and location in one clean site.</p></div>
+<div class="card"><div class="ph">Sample</div><h3>Booking Website</h3><p>Online booking, chat and deposit payment.</p></div>
+<div class="card"><div class="ph">Sample</div><h3>Online Store</h3><p>Catalogue, cart and WhatsApp ordering.</p></div>
+</div>
+</section>
+
+<section class="page" id="about">
+<h2>About <b>Hezron Web Solution</b></h2>
+<p class="lead">Hezron Web Solution is run by Hezron Ruto, a website developer from Kenya. We build modern, mobile-friendly websites that help businesses and individuals get found and get customers online.</p>
+<div class="grid">
+<div class="card"><div class="ic">🎯</div><h3>Our Mission</h3><p>Turning your ideas into powerful websites.</p></div>
+<div class="card"><div class="ic">🤝</div><h3>Our Promise</h3><p>Clear communication, fair prices, work delivered on time.</p></div>
+</div>
+</section>
+
+<section class="page" id="reviews">
+<h2>What Our <b>Clients Say</b></h2>
+<div class="grid">
+<div class="card"><div class="av">D</div><p>“Hezron Web Solution delivered an amazing website for my business. Fast, professional and reliable!”</p><b>David K.</b><div class="stars">★★★★★</div></div>
+<div class="card"><div class="av">A</div><p>“Excellent service! My online store is beautiful and works perfectly. Highly recommended!”</p><b>Amina W.</b><div class="stars">★★★★★</div></div>
+<div class="card"><div class="av">J</div><p>“Great experience! The website is modern, responsive and exactly what I needed.”</p><b>James M.</b><div class="stars">★★★★★</div></div>
+</div>
+</section>
+
+<section class="page" id="contact">
+<h2>Contact <b>Us Today</b></h2><p class="lead">Fill the form and your message goes straight to our WhatsApp. We reply within 24 hours.</p>
+<div class="formslot" style="max-width:560px"></div>
+<div class="grid"><div class="card"><div class="ic">💬</div><h3>WhatsApp</h3><p>+254 702 641104</p><a class="btn wa wa-link" href="#">Chat now</a></div>
+<div class="card"><div class="ic">✉️</div><h3>Email</h3><p>info@hezronwebsolution.com</p></div>
+<div class="card"><div class="ic">📍</div><h3>Location</h3><p>Kenya (remote services available)</p></div></div>
+</section>
+</main>
+
+<footer><div class="wrap"><div class="cols">
+<div><h4>Hezron Web Solution</h4>Turning your ideas into powerful websites.</div>
+<div><h4>Quick Links</h4><a href="#home">Home</a><a href="#services">Services</a><a href="#types">Website Types</a><a href="#portfolio">Portfolio</a><a href="#about">About</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></div>
+<div><h4>Contact</h4>+254 702 641104 (WhatsApp)<br>info@hezronwebsolution.com</div>
+</div><p style="margin-top:18px">© <span id="y"></span> Hezron Web Solution. All rights reserved.</p></div></footer>
+<a class="fab wa-link" href="#">💬 Chat on WhatsApp<br><small>+254 702 641104</small></a>
+
+<script>
+var N="254702641104";
+var T=[["🏪","Business Website","Perfect for companies, shops and professional services."],["🛒","E-Commerce Website","Sell your products online with a secure store."],["🎓","Educational Website","For schools, colleges and online learning platforms."],["❤️","Medical / Health Website","For hospitals, clinics and medical professionals."],["📅","Booking / Appointment","Let clients book services online (salons, hotels, consultations)."],["🖼️","Portfolio Website","Showcase your work and skills professionally."],["📰","Blog / News Website","Share articles, news and updates with ease."],["⚙️","Custom Websites","Need something unique? We build it for you!"]];
+function wa(t){return "https://wa.me/"+N+"?text="+encodeURIComponent(t)}
+document.querySelectorAll('.wa-link').forEach(function(a){a.href=wa("Hello Hezron Web Solution, I would like a quote for a website.");a.target="_blank"});
+document.querySelectorAll('.typegrid').forEach(function(g){g.innerHTML=T.map(function(t,i){return '<div class="card"><div class="ic">'+t[0]+'</div><h3>'+t[1]+'</h3><p>'+t[2]+'</p><button class="btn pick" data-i="'+i+'">Select →</button></div>'}).join('')});
+var opts=T.map(function(t){return '<option>'+t[1]+'</option>'}).join('');
+document.querySelectorAll('.formslot').forEach(function(s){s.innerHTML='<form><h3>Contact Us Today</h3><input class="fn" placeholder="Your Name *" required><input class="fe" type="email" placeholder="Your Email *" required><input class="fp" placeholder="WhatsApp Number *" required><select class="ft" required><option value="">Select Website Type *</option>'+opts+'</select><textarea class="fm" rows="3" placeholder="Additional Requirements (optional)"></textarea><button class="btn" type="submit">Send Message →</button></form>'});
+document.querySelectorAll('form').forEach(function(f){f.addEventListener('submit',function(e){e.preventDefault();var v=function(c){return f.querySelector(c).value};window.open(wa("Hello, I'm "+v('.fn')+".\nEmail: "+v('.fe')+"\nWhatsApp: "+v('.fp')+"\nWebsite type: "+v('.ft')+"\nDetails: "+v('.fm')),"_blank")})});
+document.addEventListener('click',function(e){var b=e.target.closest('.pick');if(!b)return;var n=T[b.dataset.i][1];document.querySelectorAll('.ft').forEach(function(s){s.value=n});location.hash='contact'});
+function show(){var h=location.hash.slice(1)||'home';if(!document.getElementById(h))h='home';document.querySelectorAll('.page').forEach(function(p){p.classList.toggle('on',p.id===h)});document.querySelectorAll('#nav a').forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+h)});window.scrollTo(0,0)}
+window.addEventListener('hashchange',show);show();
+document.getElementById('y').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
